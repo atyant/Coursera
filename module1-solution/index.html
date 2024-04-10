@@ -6,17 +6,27 @@
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
 
-    <title></title>
+    <title>Lunch Menu</title>
+    <style>
+        /* Apply styles to make the input cover the entire width of the page */
+        .full-width-input {
+            width: 70%;
+            box-sizing: border-box; /* This ensures padding and border are included in the width */
+        }
+    </style>
+
 </head>
 <body ng-app="module1">
     <div ng-controller="module1Controller">
         <div>
-            <label>Please Enter what you ate for Lunch : </label>
-            <input type="text" ng-model="lunchMenu"/>
+            <label><b>Please Enter what you ate for Lunch : </b></label><br />
+            <input type="text" ng-model="lunchMenu" class="full-width-input" />
         </div>
+        <br />
         <div>
             <button ng-click="checkLunchQuantity()">Check If Too Much</button>
         </div>
+        <br />
         <div>
             {{quantityAte}}
         </div>

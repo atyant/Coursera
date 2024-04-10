@@ -9,11 +9,9 @@
         $scope.quantityAte = "";
         $scope.checkLunchQuantity = function () {
             //$scope.lunchItemsNumber = ;
-            /*$scope.quantityAte = $scope.lunchMenu.split(',').length;*/
+            //$scope.quantityAte = $scope.lunchMenu.split(/,+[^,]/).length;
             if ($scope.lunchMenu != "") {
-
-
-                if ($scope.lunchMenu.split(',').length <= 3 && $scope.lunchMenu.split(',').length > 0) {
+                if ($scope.lunchMenu.split(/,+[^,]/).length <= 3 && $scope.lunchMenu.split(',').length > 0) {
                     $scope.quantityAte = "Enjoy";
                 } else if ($scope.lunchMenu.split(',').length > 3) {
                     $scope.quantityAte = "Too Much";
