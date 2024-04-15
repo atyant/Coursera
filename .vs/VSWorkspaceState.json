@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\module1-solution",
+    "\\Practice"
   ],
-  "SelectedNode": "\\D:\\PDF\\Visual Studio Code\\Visual Studio 2022\\Repository\\Coursera",
+  "SelectedNode": "\\Practice\\app.js",
   "PreviewInSolutionExplorer": false
 }
