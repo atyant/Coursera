@@ -9,8 +9,9 @@
 </head>
 <body ng-app="RepeatModule">
     <div ng-controller="repeatController">
+        Filter the List<input type="text" ng-model="search"/>
         <ul>
-            <li ng-repeat="item in shoppingList">Name: {{item.name}} and Surname:{{item.surname}}</li>
+            <li ng-repeat="item in shoppingList | filter : search">Name: {{item.name}} and Surname:{{item.surname}}</li>
         </ul>
         <input type="text" ng-model="addname" placeholder="item name"/>
         <input type="text" ng-model="addsurname" placeholder="item surname"/>
