@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\module1-solution",
-    "\\Practice"
+    "\\Practice",
+    "\\Practice\\Cutom Filter",
+    "\\Practice\\Lecture 14 Part 2 Digest Cycle",
+    "\\Practice\\ng-repeat"
   ],
-  "SelectedNode": "\\Practice\\app.js",
+  "SelectedNode": "\\Practice\\ng-repeat\\index.html",
   "PreviewInSolutionExplorer": false
 }
