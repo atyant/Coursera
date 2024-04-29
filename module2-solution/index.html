@@ -45,7 +45,7 @@
                         </div>
                     </li>
                 </ul>
-                <div class="emptyMessage">Everything is bought!</div>
+                <div class="emptyMessage" ng-hide="toBuyList.boughtNotification()">Everything is bought!</div>
             </div>
 
             <!-- Already Bought List -->
@@ -54,7 +54,7 @@
                 <ul>
                     <li ng-repeat="item in boughtList.items">Buy {{item.quantity}} {{item.name}}</li>
                 </ul>
-                <div class="emptyMessage">Nothing bought yet.</div>
+                <div class="emptyMessage" ng-hide="boughtList.toBuyNotification()">Nothing bought yet.</div>
             </div>
         </div>
     </div>

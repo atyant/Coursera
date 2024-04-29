@@ -16,6 +16,11 @@
             ShoppingListService.additemtoBoughtList(quantity, name);
             //ShoppingListService.removeitems(itemIndex);
         };
+
+        tobuyList.boughtNotification = //"test";
+            function () {
+            return ShoppingListService.boughtNotification();
+        };
     };
 
     ShoppingListBoughtController.$inject = ['ShoppingListService'];
@@ -26,6 +31,11 @@
         //showList.itemQuantity = "";
 
         boughtList.items = ShoppingListService.getBoughtItems();
+
+        boughtList.toBuyNotification = //"test";
+            function () {
+                return ShoppingListService.toBuyNotification();
+            };
         ////Console.log(showList.items);
 
         //showList.additem = function () {
@@ -60,6 +70,13 @@
             return itemsofBoughtList;
         };
 
+        service.boughtNotification = function () {
+            return items.length !== 0;
+        };
+
+        service.toBuyNotification = function () {
+            return itemsofBoughtList.length !== 0;
+        };
         //service.removeitems = finction(itemIndex)
         //{
         //    items.splice(itemIndex);
